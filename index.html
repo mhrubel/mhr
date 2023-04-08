@@ -477,10 +477,39 @@
 
       <div class="row mt-2">
 
-        <div class="col-md-12 mt-4 d-flex align-items-stretch">
+        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100">
           <div class="info-box">
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-39aff706-a6dd-4a3e-a5af-4e4ba3007de3"></div>
+
+            <!-- Add a button with an ID to trigger the code loading -->
+            <button id="loadCodeButton">Load Contact Form</button>
+
+            <script>
+              // Define a function to load the code and hide the button
+              function loadCodeAndHideButton() {
+                // Create a script element
+                var script = document.createElement('script');
+                script.src = 'https://static.elfsight.com/platform/platform.js';
+                script.setAttribute('data-use-service-core', '');
+                script.defer = true;
+
+                // Append the script element to the body
+                document.body.appendChild(script);
+
+                // Create a div element with the provided class name
+                var div = document.createElement('div');
+                div.className = 'elfsight-app-39aff706-a6dd-4a3e-a5af-4e4ba3007de3';
+
+                // Append the div element to the body
+                document.body.appendChild(div);
+
+                // Hide the button
+                document.getElementById('loadCodeButton').style.display = 'none';
+              }
+
+              // Add a click event listener to the button
+              document.getElementById('loadCodeButton').addEventListener('click', loadCodeAndHideButton);
+            </script>
+            
           </div>
         </div>
 
