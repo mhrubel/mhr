@@ -513,63 +513,64 @@
             <i class="bx bx-phone-call"></i>
             <h3>Contact</h3>
             <p>+880 173-499-8405</p>
+            <p>+880 197-224-4994</p>
           </div>
         </div>
 
         <br/><br/><br/>
 
           <!-- Add a button with an ID to trigger the modal -->
-  <button id="loadCodeButton" class="btn btn-primary text-center pull-center">Load Contact Form</button>
+        <button id="loadCodeButton" class="btn btn-primary text-center pull-center">Load Contact Form</button>
 
-  <!-- Add a modal container -->
-  <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="codeModalLabel">Code Modal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <!-- Add a modal container -->
+        <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="codeModalLabel">Code Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding:5%;margin:20px;">
+                <!-- Add a div element to load the code content into -->
+                <div id="codeContent"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body" style="padding:5%;margin:20px;">
-          <!-- Add a div element to load the code content into -->
-          <div id="codeContent"></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script>
-    // Define a function to load the code and show the modal
-    function loadCodeAndShowModal() {
-      // Create a script element
-      var script = document.createElement('script');
-      script.src = 'https://static.elfsight.com/platform/platform.js';
-      script.setAttribute('data-use-service-core', '');
-      script.defer = true;
+        <script>
+          // Define a function to load the code and show the modal
+          function loadCodeAndShowModal() {
+            // Create a script element
+            var script = document.createElement('script');
+            script.src = 'https://static.elfsight.com/platform/platform.js';
+            script.setAttribute('data-use-service-core', '');
+            script.defer = true;
 
-      // Append the script element to the body
-      document.body.appendChild(script);
+            // Append the script element to the body
+            document.body.appendChild(script);
 
-      // Create a div element with the provided class name
-      var div = document.createElement('div');
-      div.className = 'elfsight-app-39aff706-a6dd-4a3e-a5af-4e4ba3007de3';
+            // Create a div element with the provided class name
+            var div = document.createElement('div');
+            div.className = 'elfsight-app-39aff706-a6dd-4a3e-a5af-4e4ba3007de3';
 
-      // Append the div element to the codeContent div in the modal
-      document.getElementById('codeContent').appendChild(div);
+            // Append the div element to the codeContent div in the modal
+            document.getElementById('codeContent').appendChild(div);
 
-      // Show the modal
-      $('#codeModal').modal('show');
-    }
+            // Show the modal
+            $('#codeModal').modal('show');
+          }
 
-    // Add a click event listener to the button
-    document.getElementById('loadCodeButton').addEventListener('click', loadCodeAndShowModal);
+          // Add a click event listener to the button
+          document.getElementById('loadCodeButton').addEventListener('click', loadCodeAndShowModal);
 
-    // Add an event listener for modal hidden event to show the button again
-    $('#codeModal').on('hidden.bs.modal', function (e) {
-      document.getElementById('loadCodeButton').style.display = 'block';
-    });
-  </script>
+          // Add an event listener for modal hidden event to show the button again
+          $('#codeModal').on('hidden.bs.modal', function (e) {
+            document.getElementById('loadCodeButton').style.display = 'block';
+          });
+        </script>
 
         <br/><br/>
 
