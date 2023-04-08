@@ -524,8 +524,8 @@
 
   <!-- Add a modal container -->
   <div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-      <div class="modal-content" style="margin-top:65px;">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style="width: 100vw;background-color: rgba(238,238,238,1);margin-top:65px;">
         <div class="modal-header">
           <h5 class="modal-title" id="codeModalLabel" style="color:rgb(50, 50, 50);font-weight: bold;;">Fill The Contact Form</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -573,9 +573,9 @@
         document.getElementById('loadCodeButton').style.display = 'none';
 
         // Add an event listener to the modal-backdrop element to prevent it from blocking the modal content
-        document.querySelector('.modal-backdrop').addEventListener('click', function (e) {
-          e.stopPropagation();
-        });
+        //document.querySelector('.modal-backdrop').addEventListener('click', function (e) {
+        //e.stopPropagation();
+        //});
       }
     }
 
