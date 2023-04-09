@@ -1153,10 +1153,12 @@ section .container {
 --------------------------------------------------------------*/
 p.skill-img text {
   background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
   border-radius: 12px;
-  width:180px;
-  height:120px;
-  padding:6px;
+  margin: 5px;
+  width: 200px;
+  height: 80px;
+  padding: 6px;
   text-align: center;
 }
 p.skill-img text:hover {
