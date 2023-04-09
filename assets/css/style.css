@@ -1100,10 +1100,6 @@ section .container {
 /*--------------------------------------------------------------
 # Contact Form Modal
 --------------------------------------------------------------*/
-.modal.modal-static .modal-dialog {
-  -webkit-transform: none !important;
-  transform: none !important;
-}
 .modal-backdrop.show {
   opacity: .1!important;
 }
