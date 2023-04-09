@@ -1157,6 +1157,7 @@ p.skill-img text {
   width:180px;
   height:120px;
   padding:6px;
+  text-align: center;
 }
 p.skill-img text:hover {
   background-color: rgb(255, 255, 255);
