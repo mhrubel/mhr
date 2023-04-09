@@ -1166,6 +1166,12 @@ p.skill-img text {
 p.skill-img text:hover {
   background-color: rgb(255, 255, 255);
 }
+p.skill-img img {
+  min-width:46%;
+  max-width:92%;
+  min-height:46%;
+  max-height:92%;
+}
 
 /*--------------------------------------------------------------
 # Services Links
