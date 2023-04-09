@@ -1151,9 +1151,6 @@ section .container {
 /*--------------------------------------------------------------
 # Skill Sectiom Images
 --------------------------------------------------------------*/
-p.skill-img img {
-  display: flexbox;
-}
 p.skill-img text {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-flex;
