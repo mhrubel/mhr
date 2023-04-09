@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 
-#header .social-links a {
+#header .social-links a.contact {
   width: 230px;
   border-radius: 8px;
 }
