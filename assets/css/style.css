@@ -1112,6 +1112,7 @@ section .container {
 --------------------------------------------------------------*/
 p.skill-img img {
   background-color: rgba(255,255,255,0.2);
+  border-radius: 12px;
 }
 p.skill-img img:hover {
   background-color: rgba(255,255,255,0.7);
