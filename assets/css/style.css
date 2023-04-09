@@ -1130,7 +1130,7 @@ p.skill-img img:hover {
 # Services Links
 --------------------------------------------------------------*/
 div.portfolio-links a i.bx {
-  padding: 100px 150px 100px 150px;
+  padding: 100%;
 }
 
 div.interests div.row div.col-lg-3 {
