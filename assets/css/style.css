@@ -1120,6 +1120,9 @@ p.skill-img img:hover {
   background-color: rgba(255,255,255,0.9);
 }
 
+/*--------------------------------------------------------------
+# Services Links
+--------------------------------------------------------------*/
 div.portfolio-links a i.bx {
   padding: 100px 150px 100px 150px;
 }
