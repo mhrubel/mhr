@@ -1156,13 +1156,15 @@ p.skill-img img {
 }
 p.skill-img text {
   background-color: rgba(255, 255, 255, 0.8);
-  display: inline-block;
+  display: inline-flex;
   border-radius: 12px;
   margin: 5px;
   width: 180px;
   height: 70px;
-  padding: 6px;
+  padding: 5px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 p.skill-img text:hover {
   background-color: rgb(255, 255, 255);
