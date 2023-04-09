@@ -45,8 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* SCROLLBAR STYLE */
-
+/*--------------------------------------------------------------
+# Scrollbar Style
+--------------------------------------------------------------*/
 ::-webkit-scrollbar {
   width: 10px;
   height: 8px;
