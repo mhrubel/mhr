@@ -1106,6 +1106,9 @@ section .container {
 /*--------------------------------------------------------------
 # Contact Form Modal
 --------------------------------------------------------------*/
+.modal.fade.show {
+  background-color: rgba(7, 7, 7, 0.8);
+}
 .modal-backdrop.show {
   opacity: .1!important;
 }
