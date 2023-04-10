@@ -803,6 +803,7 @@ section .container {
 .mhr-btn:hover, .mhr-btn:active,
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   background: #1c7d32;
+  color: #fff;
 }
 
 .portfolio #portfolio-flters li:last-child {
